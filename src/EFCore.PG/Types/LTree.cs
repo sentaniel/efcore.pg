@@ -101,7 +101,7 @@ public readonly struct LTree : IEquatable<LTree>
     ///     <p>See https://www.postgresql.org/docs/current/ltree.html</p>
     /// </remarks>
     public int NLevel
-        => throw new InvalidOperationException(CoreStrings.FunctionOnClient(nameof(NLevel)));
+        => _value.Split(".").Length;
 
     /// <summary>
     ///     Returns position of first occurrence of <paramref name="other" /> in this ltree, or -1 if not found.
