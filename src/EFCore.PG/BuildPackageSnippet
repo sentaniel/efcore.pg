@@ -1,0 +1,2 @@
+dotnet build EFCore.PG.sln -c Release
+dotnet nuget push "src/EFCore.PG/bin/Release/SSERP.Npgsql.EntityFrameworkCore.PostgreSQL.8.0.5.nupkg" --source gitlab
